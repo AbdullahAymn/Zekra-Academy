@@ -16,7 +16,9 @@ export default function Home() {
           <li className="mb-2">
             Get started by editing{" "}
             <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.js
+              "ذكري" هي أكاديمية متخصصة في تحفيظ القرآن الكريم وتعليمه وفق
+              منهجية علمية حديثة، تهدف إلى تسهيل الحفظ والتلاوة لجميع الفئات
+              العمرية، مع التركيز على الإتقان والالتزام بأحكام التجويد.
             </code>
             .
           </li>
