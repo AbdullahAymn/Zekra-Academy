@@ -107,7 +107,7 @@ export default function Footer() {
                 <h1>Zekraacademy@gmail.com</h1>
               </a>
             </li>
-
+{/* 
             <li className=" flex items-center gap-2 text-[16px]   ">
               <svg
                 width="15"
@@ -123,7 +123,7 @@ export default function Footer() {
               </svg>
 
               <h1>الزقازيق محافظة الشرقية مصر</h1>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

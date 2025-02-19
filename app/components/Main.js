@@ -5,9 +5,9 @@ export default function Main() {
     <div id="home" className=" z-10 relative  ">
       <div className=" absolute bg-origin-content bg-cover   w-full h-full">
         <img
-          className={`  transition-all ease-in-out duration-[3000ms] absolute left-0 top-0 h-full w-full object-cover brightness-[]`}
-          // src={"/modified_image.webp"}
-          src={"/hero-image.png"}
+          className={`  transition-all ease-in-out duration-[3000ms] absolute left-0 top-0 h-full w-full object-cover brightness-[.8]`}
+          src={"/hero-img.webp"}
+          // src={"/hero-image.png"}
           alt="cover"
         />
       </div>
