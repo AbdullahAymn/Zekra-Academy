@@ -1,4 +1,6 @@
+import Feauters from "./components/Feauters";
 import Main from "./components/Main";
+import Ser from "./components/Ser";
 import Who from "./components/Who";
 
 export default function Home() {
@@ -6,6 +8,8 @@ export default function Home() {
     <div>
       <Main />
       <Who />
+      <Ser />
+      <Feauters />
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Title({ text, num = 12 }) {
+export default function Title({ text, num = 15 }) {
   const Rec = () => (
     <svg
       width="16"

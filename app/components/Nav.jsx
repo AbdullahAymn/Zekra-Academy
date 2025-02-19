@@ -6,7 +6,7 @@ const links = [
   { id: "features", text: "ما يميزنا" },
   { id: "packages", text: "الباقات" },
   { id: "rates", text: "اراء العملاء" },
-  { id: "faqs", text: "الاسئلة الشائعة" },
+//   { id: "faqs", text: "الاسئلة الشائعة" },
   { id: "contacts", text: "تواصل معنا" },
 ];
 
