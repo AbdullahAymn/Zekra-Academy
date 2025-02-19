@@ -48,7 +48,7 @@ export default function Rates() {
   );
 
   return (
-    <div id="rates">
+    <div id="rates" className=" py-3 " >
       <h1 className=" text-center my-8 text-[#3D4D4A] font-[700] text-[27px] md:text-[32px]  ">
         بعض أراء عملائنا
       </h1>

@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import Nav from "./components/Nav";
 import "./globals.css";
 import localFont from "next/font/local";
@@ -55,8 +56,8 @@ const workSans = localFont({
 
 export const metadata = {
   title: "Zekra Academy",
-  description: `"ذكري" هي أكاديمية متخصصة في تحفيظ القرآن الكريم وتعليمه وفق منهجية علمية حديثة`,
-  // description: `نحن أكاديمية "ذكري" لتحفيظ القرآن الكريم، نوفر لك بيئة تعليمية متميزة لحفظ القرآن الكريم وإتقانه وفق أعلى المعايير الشرعية، مع برامج متخصصة للصغار والكبار، ودورات مكثفة لنيل الإجازات وإتقان التجويد. انضم إلينا اليوم وابدأ رحلتك المباركة مع كتاب الله!`,
+  description: `"ذكرى" هي أكاديمية متخصصة في تحفيظ القرآن الكريم وتعليمه وفق منهجية علمية حديثة`,
+  // description: `نحن أكاديمية "ذكرى" لتحفيظ القرآن الكريم، نوفر لك بيئة تعليمية متميزة لحفظ القرآن الكريم وإتقانه وفق أعلى المعايير الشرعية، مع برامج متخصصة للصغار والكبار، ودورات مكثفة لنيل الإجازات وإتقان التجويد. انضم إلينا اليوم وابدأ رحلتك المباركة مع كتاب الله!`,
 };
 
 export default function RootLayout({ children }) {
@@ -65,6 +66,7 @@ export default function RootLayout({ children }) {
       <body className={`  almarai-regular ${workSans.variable}`}>
         <Nav />
         {children}
+        <Footer />
       </body>
     </html>
   );

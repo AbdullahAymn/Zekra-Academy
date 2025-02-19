@@ -136,15 +136,15 @@ export default function Packages() {
       <section className=" rounded-[20px] my-20 bg-[#3D4D4A0D] px-8 md:px-24  flex flex-wrap items-center gap-8 justify-center ">
         <section className=" flex-1 text-center lg:text-start">
           <h1 className=" mt-6 text-[25px] text-center lg:text-start md:text-[45px] lg:text-[50px]  font=[700] text-[#3D4D4A] ">
-            هل أنت مستعد للانضمام؟
+            ابدأ حصتك التجريبية مجانا
           </h1>
           <h4 className=" my-2 text-[#C3C8C7] text-center lg:text-start text-[15px] md:text-[22px] ">
-            احجز مقعدك الان
+            قم بالبدء الان واحصل علي أول حصة تجريبية لك مجانا مع افضل المعلمين
           </h4>
           <a className=" w-[200px]  " href="https://wa.me/201069404880">
             {" "}
             <button className="mb-6 w-[200px] border border-[#3D4D4A] mt-3  py-3 rounded-[8px] bg-[#3D4D4A] text-white transition-all ease-in-out duration-300">
-              سجل الان
+              ابدأ الآن{" "}
             </button>
           </a>
         </section>

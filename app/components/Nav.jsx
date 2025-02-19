@@ -14,7 +14,7 @@ export default function Nav() {
   return (
     <div>
       <nav className="w-full bg-white shadow-md">
-        <div className=" w-full px-12 py-3 flex justify-center md:justify-between items-center">
+        <div className=" w-full px-12 py-3 flex justify-center gap-16 md:justify-between items-center">
           {/* Logo */}
           <div className="flex items-center">
             <img

@@ -51,7 +51,7 @@ export default function Ser() {
   ];
   return (
     <div id="services">
-      <Title text={`خدماتنا في "ذكري"`} />
+      <Title text={`خدماتنا في "ذكرى"`} />
       <div className="flex flex-wrap justify-center gap-6 px-8 md:px-16 lg:px-24">
         {services.map((service, index) => (
           <Card

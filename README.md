@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Zekra Academy Quran Platform
 
-## Getting Started
+## Overview
+A modern web application for Zekra Academy - a specialized Quran memorization and teaching platform. Built with Next.js, this responsive website showcases the academy's services, features, and contact information while maintaining Islamic aesthetic values.
 
-First, run the development server:
+## Key Features
+- 🕌 Responsive design with Arabic language support
+- 📖 Interactive Quran learning program displays
+- 📱 WhatsApp integration for instant communication
+- 📬 Multiple contact channels (phone, email, contact form)
+- 🎨 Islamic-inspired design system with:
+  - Custom Arabic font support (Alexandria)
+  - Soothing color palette (#3D4D4A, #05846D, #F9F9F9)
+  - Optimized typography hierarchy
+- 📚 Comprehensive program sections:
+  - Age-specific learning paths
+  - Intensive Tajweed courses
+  - Ijazah certification programs
+  - Progress tracking system
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Technical Components
+
+### Core Structure
+- `layout.js`: Main app structure with font configuration
+- `page.js`: Primary page composition
+
+### Key Components
+| Component       | Functionality                                 |
+|-----------------|-----------------------------------------------|
+| `Main`          | Hero section with CTA and academy overview    |
+| `Nav`           | Responsive navigation with logo and WhatsApp  |
+| `Contact`       | Multi-channel contact section with SVG icons  |
+| `Packages`      | Program packages and pricing display          |
+| `Rates`         | Student testimonials and success stories      |
+
+## Technology Stack
+- ⚛️ React 19.0.0 + Next.js 15.1.7 App Router
+- 🎨 Tailwind CSS with custom configuration
+- 📱 Responsive breakpoints (mobile-first approach)
+- 🖼️ Optimized image handling
+- 📄 Metadata optimization for search engines
+
+## Font Configuration
+```js
+const workSans = Work_Sans({
+  subsets: ["latin"],
+  variable: "--font-work-sans",
+  weight: ["100", "200", "400", "500", "600", "700", "900"]
+});
 ```
+- Uses Alexandria font family for Arabic text
+- Work Sans as secondary font for supporting content
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Color Scheme
+| Purpose         | Hex Code       | Usage Example                      |
+|-----------------|---------------|------------------------------------|
+| Primary         | `#3D4D4A`     | Buttons, Headings                  |
+| Secondary       | `#05846D`     | Accents, Hover states              |
+| Background      | `#F9F9F9`     | Section backgrounds                |
+| Text Primary    | `#101828`     | Main content                       |
+| Text Secondary  | `#475467`     | Subtitles and descriptions         |
+| White           | `#FFFFFF`     | Icon backgrounds, Card surfaces    |
+| WhatsApp Accent | `#5AA794`     | WhatsApp brand elements            |
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Component Implementation
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### SVG Integration
+- Custom designed SVG icons for contact methods
+- Dynamic icon coloring through Tailwind CSS classes
+- Optimized SVG paths for rendering performance
 
-## Learn More
+### Responsive Practices
+- Mobile-first grid layouts with Tailwind's breakpoint system
+- Fluid typography scaling using viewport units
+- Conditional element stacking on mobile views
 
-To learn more about Next.js, take a look at the following resources:
+### WhatsApp Integration
+- Direct deep linking to WhatsApp business API
+- Pre-formatted message templates
+- Device-aware URL handling (`https://wa.me/`)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Image Optimization
+- Next.js static image optimization
+- Lazy loading for below-the-fold content
+- WebP format conversion for faster loading
+- Dynamic image quality based on viewport size
