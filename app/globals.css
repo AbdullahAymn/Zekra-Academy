@@ -1,9 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Almarai:wght@300;400;700;800&family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cairo:wght@200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body {
-  color: #0d0c22;
-  background: #fff;
-  font-family: Arial, Helvetica, sans-serif;
+
+.almarai-light {
+  font-family: "Alexandria", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.almarai-regular {
+  font-family: "Alexandria", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.almarai-bold {
+  font-family: "Alexandria", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.almarai-extrabold {
+  font-family: "Alexandria", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+body{
+  direction: rtl;
 }

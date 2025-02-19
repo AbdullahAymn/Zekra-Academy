@@ -1,14 +1,56 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import Nav from "./components/Nav";
 import "./globals.css";
+import localFont from "next/font/local";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const workSans = localFont({
+  src: [
+    {
+      path: "./fonts/Alexandria-Black.ttf",
+      weight: "900",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Alexandria-ExtraBold.ttf",
+      weight: "800",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Alexandria-Bold.ttf",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Alexandria-SemiBold.ttf",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Alexandria-Medium.ttf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Alexandria-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Alexandria-Black.ttf",
+      weight: "900",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Alexandria-Thin.ttf",
+      weight: "200",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Alexandria-ExtraLight.ttf",
+      weight: "100",
+      style: "normal",
+    },
+  ],
+  variable: "--font-work-sans",
 });
 
 export const metadata = {
@@ -19,9 +61,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="ar">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`  almarai-regular ${workSans.variable}`}>
+        <Nav />
         {children}
       </body>
     </html>
