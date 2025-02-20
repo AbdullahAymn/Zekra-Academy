@@ -1,3 +1,4 @@
+import Script from "next/script";
 import Footer from "./components/Footer";
 import Nav from "./components/Nav";
 import "./globals.css";
@@ -63,6 +64,36 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="ar">
+      <head>
+        {/* Snap Pixel Code */}
+        <Script
+          id="snap-pixel"
+          type="text/javascript"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+            (function(e,t,n){
+              if(e.snaptr) return;
+              var a=e.snaptr=function(){
+                a.handleRequest ? a.handleRequest.apply(a,arguments) : a.queue.push(arguments)
+              };
+              a.queue=[];
+              var s='script';
+              r=t.createElement(s);
+              r.async=!0;
+              r.src=n;
+              var u=t.getElementsByTagName(s)[0];
+              u.parentNode.insertBefore(r,u);
+            })(window,document,'https://sc-static.net/scevent.min.js');
+            
+            snaptr('init', '9706ba7f-af13-4fe8-9794-33ed4eb36b4a', {});
+            snaptr('track', 'PAGE_VIEW');
+          `,
+          }}
+        />
+
+        {/* End Snap Pixel Code */}
+      </head>
       <body className={`  almarai-regular ${workSans.variable}`}>
         <Nav />
         {children}
